@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width:90%;
+            margin: auto;
+
+        }
+        #p1{
+            color: black;
+        }
+        .header{
+            width:25%;
+            margin: auto;
+            text-align: center;
+            color: navy;
+        }
+     .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width:60%;
+        grid-gap: 40px;
+        margin: auto;
+        /* text-align: center; */
+        margin-top: 100px;
+        
+    }
+    h3{
+        color: navy;
+        margin-bottom: 0px;
+    }
+    .green{
+        color:green;
+    }
+    .green{
+        color:green;
+    }
+    .green{
+        color:green;
+    }
+    .gold{
+        color:gold;
+    }
+    .blue{
+        color: blue;
+    }
+    button{
+        border: 1px solid blue;
+        background-color: transparent; 
+        color: blue;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    /* .button1{
+        border: 1px solid blue;
+        background: blue;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    } */
+    button:hover{
+        background-color: blue;
+        color: white;
+    }
+    .container > div{
+        box-shadow:  rgba(0, 0, 0, 0.22) 0px 10px 10px ;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 376px ) and (max-width: 768px)
+    {
+        .container
+        {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    @media only screen and (min-width: 0px ) and (max-width: 375px)
+    {
+        .container
+        {
+            grid-template-columns: repeat(1,1fr);
+            width: 100%;
+        }   
+     }
+
+    </style> 
+</head>
+<body>
+    <div id="main">
+        <div class = header>
+            <h1>Choose a plan that for your business</h1>
+            <P id= "p1">We collect reviews from our users so you can get an honest opinion if what an experiance with our website are really like</P>
+        </div>
+        <div class = "container">
+
+            <div>
+                <h3>Starter Plan</h3>
+                <h2 class = "green">Free</h2>
+                <p class = "p2"><i>Per month</i></p>
+                <P>We collect reviews from our users so you can get an honest opinion if what an experiance with our website</P>
+                <button>Start Now</button>
+            </div>
+            <div>
+                <h3>Starter Plan</h3>
+                <h2 class = "gold">$39.00</h2>
+                <p class ="p2"><i>Per month</i></p>
+                <P>We collect reviews from our users so you can get an honest opinion if what an experiance with our website</P>
+                <button class = "button1">Start Now</button>
+            </div>
+            <div>
+                <h3>Starter Plan</h3>
+                <h2 class = "blue">$59.00</h2>
+                <p class = "p2"><i>Per month</i></p>
+                <P>We collect reviews from our users so you can get an honest opinion if what an experiance with our website</P>
+                <button>Start Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
